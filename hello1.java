@@ -13,13 +13,28 @@
 // }
 
 
+// class hello1
+// {
+//     public static void main (String args[])
+//     {
+//         int a= 10;
+//         System.out.println(a++);
+//         System.out.println(++a);
+//     }
+
+// }
+
+
+// string buffer
+
 class hello1
 {
     public static void main (String args[])
     {
-        int a= 10;
-        System.out.println(a++);
-        System.out.println(++a);
+        StringBuffer sb = new StringBuffer("Heman");
+        sb.append(" yadav");
+        System.out.println(sb.charAt(3));
+        System.out.println(sb);
     }
-
+}
 }
