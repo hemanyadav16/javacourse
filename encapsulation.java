@@ -1,3 +1,5 @@
+// encaplusation is a method which is used to privatize the data that others cant able to access the data without the knowledge
+// using private keyword
 class human 
 {
     private int age;
@@ -33,7 +35,32 @@ class encapsulation
         obj.setage(11);
         obj.setname("heman");
 
-        System.out.println(obj.getname() + ":" + obj.getage());
+        System.out.println(obj.getname() + ":" + obj.getage());  // we can access the data like this 
     }
+}
+
+
+// this keyword
+
+class human 
+{
+    private int age;
+    private String name;
+
+    
 
 }
+
+
+class encapsulation 
+{
+    public static void main (String args[])
+    {
+        human obj = new human();
+        obj.setage(11);
+        obj.setname("heman");
+
+        System.out.println(obj.getname() + ":" + obj.getage());
+    }
+}
+

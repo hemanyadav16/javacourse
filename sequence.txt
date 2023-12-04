@@ -1,0 +1,6 @@
+classes
+arrays
+static 
+encapsulation
+this keyword
+constructor

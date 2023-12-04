@@ -127,17 +127,21 @@ class arrays
 
 
 
-//enhanced for loop only for array as if now
+// //enhanced for loop only for array as if now
 
-class arrays
-{
-    public static void main (String args[])
-    {
-        int nums[4] = {1,9,7,5}
-        for (int n : nums)
-        {
-            System.out.println(n)
-        }
-    }
-}
+// class arrays
+// {
+//     public static void main (String args[])
+//     {
+//         int nums[4] = {1,9,7,5}
+//         for (int n : nums)
+//         {
+//             System.out.println(n)
+//         }
+//     }
+// }
+
+
+
+
 
