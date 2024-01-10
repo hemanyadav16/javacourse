@@ -1,38 +1,51 @@
-class A 
+class Laptop
 {
-    public void show()
-    {
-        System.out.println("in A show");
+    int prize;
+    String name;
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + prize;
+        result = prime * result + ((name == null) ? 0 : name.hashCode());
+        return result;
     }
-}
-class B extends A 
-{
-    public void show()
-    {
-        System.out.println("in B show");
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Laptop other = (Laptop) obj;
+        if (prize != other.prize)
+            return false;
+        if (name == null) {
+            if (other.name != null)
+                return false;
+        } else if (!name.equals(other.name))
+            return false;
+        return true;
     }
-}
 
-class C extends A 
-{
-    public void show()
-    {
-        System.out.println("in C show");
-    }
-}
 
+}
 
 class student
 {
     public static void main (String args[])
     {
-        A obj = new A();
-        obj.show();
+        Laptop obj1 = new Laptop();
+        obj1.prize=1000;
+        obj1.name= "lenova";
 
-        obj = new B();
-        obj.show();
+        Laptop obj2 = new Laptop();
+        obj2.prize=1000;
+        obj2.name= "lenova";
+        
+        System.out.println(obj1.equals(obj2));       
+        
 
-        obj = new C();
-        obj.show();
     }
 }
