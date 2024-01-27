@@ -37,7 +37,10 @@ class encapsulation
 
         System.out.println(obj.getname() + ":" + obj.getage());  // we can access the data like this 
     }
+
+
 }
+
 
 
 // this keyword
@@ -46,7 +49,7 @@ class human
 {
     private int age;
     private String name;
-
+    
     
 
 }

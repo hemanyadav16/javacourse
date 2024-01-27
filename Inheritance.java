@@ -84,3 +84,53 @@ public class Inheritance
 }
 
 //here add method of advcalc overrides add method of calc class
+
+
+
+//polymorphism - many behaviour
+
+//2 types
+    // run time -- method overloding 
+    // compile time -- method  overriding
+
+
+// dynamic method dispatch 
+
+class A 
+{
+    public void show()
+    {
+        System.out.println("in A show");
+    }
+}
+class B extends A 
+{
+    public void show()
+    {
+        System.out.println("in B show");
+    }
+}
+
+class C extends A 
+{
+    public void show()
+    {
+        System.out.println("in C show");
+    }
+}
+
+
+class Inheritance
+{
+    public static void main (String args[])
+    {
+        A obj = new A();
+        obj.show();                           // here A obj = new B(); possible
+
+        obj = new B();    // reference is A(we can use reference of parents) and create object of B and 
+        obj.show();        // assign to parent reference variabe
+
+        obj = new C();
+        obj.show();
+    }
+}
