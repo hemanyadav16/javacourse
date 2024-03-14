@@ -3,30 +3,30 @@
 #include<stdlib.h>
 #include<string.h>
 struct day{
-    char* dayname ;
+    char*dayname ;
     int date;
-    char* activity;
+    char*activity;
 
 };
 int numdays =7;
 int i ;
-struct day* calender;
+struct day*calender;
 void read()
 {
-    char* dn;
-    char* da;
+    char*dn;
+    char*da;
     int dd;
     for(i=0;i<numdays;i++)
     {
         printf("enter the day name : ");
         scanf("%s ",dn);
-        (calender + i ) -> dayname = strdup(dn);
+        (calender+i)->dayname=strdup(dn);
         printf("enter date :");
         scanf( " %d ",&dd);
-        (calender + i ) -> date = dd;
+        (calender + i)->date = dd;
         printf("enter the day activity: ");
         scanf("%s ",da);
-        (calender + i ) -> activity = strdup(da);
+        (calender + i)->activity = strdup(da);
         
 
     }
@@ -36,14 +36,14 @@ void dispaly()
 {
     for (i=0;i<numdays;i++)
     {
-        printf("day %d(%s) :%s \n",(calender+i)->date,(calender+i)->dayname,(calender+i)-> activity);
+        printf("day %d(%s) :%s \n",(calender+i)->date,(calender+i)->dayname,(calender+i)->activity);
        
     }
 }
 
 void create()
 {
-    struct day* calender = (struct day*)malloc(numdays*sizeof(struct day));
+    struct day*calender = (struct day*)malloc(numdays*sizeof(struct day));
      if(calender == NULL)
     {
         printf("memory allocation failed");    
