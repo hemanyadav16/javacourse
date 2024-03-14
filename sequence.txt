@@ -14,3 +14,7 @@ hashcode
 upcasting and downcasting - in hashcode file
 wrapper class
 abstract keyword
+inner class
+anonymous class-- inside inner class
+interface
+annotation
